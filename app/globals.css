@@ -1,0 +1,49 @@
+:root {
+  --navy: #17233d;
+  --navy-soft: #24355c;
+  --blue: #1f4e9c;
+  --blue-bright: #2f6fd0;
+  --page-bg: #f4f5f7;
+  --card-bg: #ffffff;
+  --border: #dfe3e8;
+  --text: #1d2430;
+  --text-muted: #6b7484;
+  --danger: #b3261e;
+  --warn: #9a6700;
+  --ok: #1f7a3d;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text);
+  font-family:
+    'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo,
+    system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* 数値は桁が揺れないように等幅で見せる */
+.numeric {
+  font-variant-numeric: tabular-nums;
+}

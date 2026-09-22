@@ -1,0 +1,198 @@
+.topbar {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 20px;
+  background: var(--navy);
+  color: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 11.5px;
+  color: #b9c2d4;
+}
+
+.main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.18fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 14px 13px;
+}
+
+.highlight {
+  border: 2px solid var(--blue-bright);
+  padding: 10px 13px 12px;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 0 0 9px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.cardNote {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* 右カラム(Jevの値)の方が背が高いので、左カラムは本文欄を伸ばして余白を埋める */
+.formCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.textarea {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 96px;
+  padding: 8px 10px;
+  border: 1px solid #c8ccd4;
+  border-radius: 4px;
+  resize: vertical;
+  line-height: 1.7;
+  background: #fff;
+}
+
+.textarea:focus {
+  outline: 2px solid var(--blue-bright);
+  outline-offset: -1px;
+  border-color: var(--blue-bright);
+}
+
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.sample {
+  border: 1px solid var(--border);
+  background: #f7f8fa;
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sample:hover {
+  border-color: var(--blue-bright);
+  color: var(--blue);
+  background: #eef4fd;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.submit {
+  border: 0;
+  border-radius: 4px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 7px 22px;
+  cursor: pointer;
+}
+
+.submit:hover:not(:disabled) {
+  background: #1a4488;
+}
+
+.submit:disabled {
+  background: #a8b2c4;
+  cursor: not-allowed;
+}
+
+.counter {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.inlineError {
+  margin: 6px 0 0;
+  color: var(--danger);
+  font-size: 12px;
+}
+
+.note {
+  margin: 10px 0 0;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.placeholder {
+  margin: 0;
+  padding: 18px 0;
+  color: var(--text-muted);
+  font-size: 12.5px;
+}
+
+.error {
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid #e7b4b0;
+  background: #fdf0ef;
+  border-radius: 4px;
+  color: var(--danger);
+  font-size: 12.5px;
+}
+
+.footer {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
